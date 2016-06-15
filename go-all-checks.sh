@@ -1,13 +1,13 @@
 #!/bin/sh
 
-echo "go test -v"
+echo ">>> go test -v"
 go test -v "$@"
 
-echo "go vet"
+echo ">>> go vet"
 go vet "$@"
 
-echo "golint"
+echo ">>> golint"
 golint "$@"
 
-echo "errcheck"
+echo ">>> errcheck"
 errcheck "$@"
