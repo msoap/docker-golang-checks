@@ -35,6 +35,7 @@ go-checks.sh run tools:
 
 Pre-installed tools:
 
-  * golint
-  * errcheck
-  * go-carpet
+  * [golint](https://github.com/golang/lint)
+  * [errcheck](https://github.com/kisielk/errcheck)
+  * [go-carpet](https://github.com/msoap/go-carpet)
+  * [gometalinter](https://github.com/alecthomas/gometalinter), and all tools for it
