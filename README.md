@@ -31,3 +31,8 @@ Pre-installed tools:
   * golint
   * errcheck
   * go-carpet
+
+Links:
+
+  * [Dockerfile](https://github.com/msoap/docker-golang-checks/blob/master/Dockerfile)
+  * [https://hub.docker.com/r/msoap/golang-checks/](https://hub.docker.com/r/msoap/golang-checks/)
