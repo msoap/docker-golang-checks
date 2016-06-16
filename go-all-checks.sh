@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo ">>> go test -v"
 go test -v "$@"
@@ -11,3 +11,6 @@ golint "$@"
 
 echo ">>> errcheck"
 errcheck "$@"
+
+echo ">>> gofmt"
+diff -u <(gofmt -d *.go) <(echo -n)
