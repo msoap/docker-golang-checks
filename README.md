@@ -25,7 +25,7 @@ Show test covearge:
 
     docker run -i --rm -v "$PWD":/app -w /app msoap/golang-checks go-carpet -256colors | less
 
-Run tools:
+go-checks.sh run tools:
 
   * go test -v
   * go vet
