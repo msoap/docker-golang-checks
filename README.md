@@ -9,17 +9,21 @@ Get:
 
     docker pull msoap/golang-checks
 
-Run checks for Go-code:
+Run all checks:
 
     docker run -i --rm -v "$PWD":/app -w /app/src/name msoap/golang-checks go-checks.sh .
 
+Run tests only:
+
+    docker run -i --rm -v "$PWD":/app -w /app msoap/golang-checks go test -v -race -cover
+
 Run custom checks from shell:
 
-    docker run -it --rm -v "$PWD":/app -w /app/src/name msoap/golang-checks bash
+    docker run -it --rm -v "$PWD":/app -w /app msoap/golang-checks bash
 
 Show test covearge:
 
-    docker run -i --rm -v "$PWD":/app -w /app/src/name msoap/golang-checks go-carpet -256colors | less
+    docker run -i --rm -v "$PWD":/app -w /app msoap/golang-checks go-carpet -256colors | less
 
 Run tools:
 
