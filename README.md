@@ -1,5 +1,8 @@
 # Go-code checks Docker image
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/msoap/golang-checks.svg?maxAge=2592000)](https://hub.docker.com/r/msoap/golang-checks/)
+[![Docker Stars](https://img.shields.io/docker/stars/msoap/golang-checks.svg?maxAge=2592000)](https://hub.docker.com/r/msoap/golang-checks/)
+
 GOPATH in container set to `/go:/app`
 
 Get:
@@ -31,8 +34,3 @@ Pre-installed tools:
   * golint
   * errcheck
   * go-carpet
-
-Links:
-
-  * [Dockerfile](https://github.com/msoap/docker-golang-checks/blob/master/Dockerfile)
-  * [https://hub.docker.com/r/msoap/golang-checks/](https://hub.docker.com/r/msoap/golang-checks/)
