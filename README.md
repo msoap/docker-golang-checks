@@ -11,11 +11,13 @@ Get:
 
 Run all checks (without gometalinter):
 
-    docker run -i --rm -v "$PWD":/app -w /app/src/name msoap/golang-checks go-checks.sh .
+    docker run -i --rm -v "$PWD":/app msoap/golang-checks go-checks.sh .
+    # if your code use vendor and must been in GOPATH, run from local GOPATH:
+    docker run -i --rm -v "$PWD":/app -w /app/srs/project-name msoap/golang-checks go-checks.sh .
 
 Run gometalinter:
 
-    docker run -i --rm -v "$PWD":/app -w /app/src/name msoap/golang-checks gometalinter .
+    docker run -i --rm -v "$PWD":/app -w /app msoap/golang-checks gometalinter .
 
 Run tests only:
 
@@ -28,6 +30,10 @@ Run custom checks from shell:
 Show test covearge:
 
     docker run -i --rm -v "$PWD":/app -w /app msoap/golang-checks go-carpet -256colors | less
+
+Show tools list:
+
+    docker run --rm msoap/golang-checks ls /go/bin
 
 go-checks.sh run tools:
 
