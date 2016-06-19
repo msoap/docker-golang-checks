@@ -1,1 +1,1 @@
-go-checks.sh
+../go-checks.sh
