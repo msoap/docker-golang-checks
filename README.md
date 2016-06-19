@@ -12,6 +12,10 @@ Get:
 Run all checks (without gometalinter):
 
     docker run -i --rm -v "$PWD":/app msoap/golang-checks go-checks.sh .
+    
+    # alpine version:
+    docker run -i --rm -v "$PWD":/app msoap/golang-checks:alpine go-checks.sh .
+    
     # if your code use vendor and must been in GOPATH, run from local GOPATH:
     docker run -i --rm -v "$PWD":/app -w /app/src/project-name msoap/golang-checks go-checks.sh .
 
