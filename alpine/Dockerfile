@@ -8,7 +8,7 @@ RUN set -ex \
     && gometalinter --install || true \
     && go get github.com/msoap/go-carpet
 
-COPY ../go-checks.sh $GOPATH/bin/
+COPY go-checks.sh $GOPATH/bin/
 
 ENV GOPATH=$GOPATH:/app
 
