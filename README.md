@@ -2,6 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/msoap/golang-checks.svg?maxAge=3600)](https://hub.docker.com/r/msoap/golang-checks/)
 [![Docker Stars](https://img.shields.io/docker/stars/msoap/golang-checks.svg?maxAge=3600)](https://hub.docker.com/r/msoap/golang-checks/)
+[![](https://images.microbadger.com/badges/image/msoap/golang-checks.svg)](https://microbadger.com/images/msoap/golang-checks)
 
 GOPATH in container set to `/go:/app`
 
